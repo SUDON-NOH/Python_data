@@ -6,4 +6,5 @@
 - http://konlpy.org/en/v0.4.4/ # KoNLPy
 - https://data-make.tistory.com/126 # multi index & multi columns
 - https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.set_index.html # 인덱스 
-- https://datascienceschool.net/view-notebook/a49bde24674a46699639c1fa9bb7e213/ # 
+- https://datascienceschool.net/view-notebook/a49bde24674a46699639c1fa9bb7e213/ # 인덱스 조작
+- https://data-make.tistory.com/139 # 그룹연산
