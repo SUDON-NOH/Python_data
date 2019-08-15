@@ -32,8 +32,8 @@
 
 ### column name 변경
 - DataFrame.rename(columns={'original name1':'new name1',
--                          'original name2':'new name2',
--                          'original name3':'new name3'}, 
+-                           'original name2':'new name2',
+-                           'original name3':'new name3'}, 
 -                 inplace=True)
 - DataFrame.rename(columns=lambda x: x[0:3], inplace=True) # 4글자로 줄이기
 - DataFrame.rename(index={0:'zero',1:'one'}, inplace=True) # index의 이름을 zero, 1로 바꾸기
