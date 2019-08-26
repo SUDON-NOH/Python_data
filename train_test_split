@@ -1,17 +1,15 @@
 [Python] sklearn의 train_test_split() 사용법
  
-sklearn.model_selection.train_test_split — scikit-learn 0.20.0 documentation
-sklearn.model_selection .train_test_split sklearn.model_selection. train_test_split ( *arrays , **options ) [source] Split arrays or matrices into random train and test subsets Quick utility that wraps input validation and next(ShuffleSplit().split(X, y)) and application to input data into a single
-
-scikit-learn.org
-
  1. 개요
 
-머신러닝 모델을 학습하고 그 결과를 검증하기 위해서는 원래의 데이터를 Training, Validation, Testing의 용도로 나누어 다뤄야 한다. 그렇지 않고 Training에 사용한 데이터를 검증용으로 사용하면 시험문제를 알고 있는 상태에서 공부를 하고 그 지식을 바탕으로 시험을 치루는 꼴이므로 제대로 된 검증이 이루어지지 않기 때문이다. 
+머신러닝 모델을 학습하고 그 결과를 검증하기 위해서는 원래의 데이터를 Training, Validation, Testing의 용도로 나누어 다뤄야 한다. 
+그렇지 않고 Training에 사용한 데이터를 검증용으로 사용하면 시험문제를 알고 있는 상태에서 공부를 하고 그 지식을 바탕으로 시험을 치루는
+꼴이므로 제대로 된 검증이 이루어지지 않기 때문이다. 
 
 ​
 
-딥러닝을 제외하고도 다양한 기계학습과 데이터 분석 툴을 제공하는 scikit-learn 패키지 중 model_selection에는 데이터 분할을 위한 train_test_split 함수가 들어있다.
+딥러닝을 제외하고도 다양한 기계학습과 데이터 분석 툴을 제공하는 scikit-learn 패키지 중 model_selection에는 데이터 분할을 위한
+train_test_split 함수가 들어있다.
 
 ​
 
