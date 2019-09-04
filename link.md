@@ -8,3 +8,4 @@
 - https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.set_index.html # 인덱스 
 - https://datascienceschool.net/view-notebook/a49bde24674a46699639c1fa9bb7e213/ # 인덱스 조작
 - https://data-make.tistory.com/139 # 그룹연산
+- https://kkokkilkon.tistory.com/155 # 각종 data 처리방법
