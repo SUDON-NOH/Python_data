@@ -1,4 +1,7 @@
 # Python_data
+- https://www.esrikr.com/
+
+
 - Data Analysis
 
 - UTF-8 Encoding 과정에서 오류
