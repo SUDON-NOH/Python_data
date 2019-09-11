@@ -1,7 +1,7 @@
 # Python_data
 - https://www.esrikr.com/  # 지리정보시스템
 - https://www.esrikr.com/products/arcgis-desktop/arcgis-pro/
-
+- http://datakorea.datastore.or.kr/ # 데이터코리아 - 각종 
 - Data Analysis
 
 - UTF-8 Encoding 과정에서 오류
