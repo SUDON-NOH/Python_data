@@ -1,7 +1,5 @@
 # Credit 사용에 주의해야 한다.
 
-
-
 import pandas as pd
 import googlemaps
 
