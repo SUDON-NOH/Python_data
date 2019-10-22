@@ -27,7 +27,7 @@
 
 ### boxplot 극단치 제거
 
-- q75, q25 = np.percentile(Dataframe 행, [75, 25])
+- q75, q25 = np.percentile(Dataframe 열 or 행, [75, 25])
 - iqr = q75 - q25
 - a = q75 + (1.5 * iqr)
 - b = q25 - (1.5 * iqr)
