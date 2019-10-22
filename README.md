@@ -50,10 +50,9 @@ https://nbviewer.jupyter.org
 
 깃허브 사이트의 url
 
-https://github.com/qbxlvnf11/machine-learning/blob/master/Character-level_Word-level_t-SNE.ipynb
+https://github.com/SUDON-NOH/Python_data/blob/master/matplotlib_basic.ipynb
 
 - 결과
 
-https://nbviewer.jupyter.org/github/qbxlvnf11/machine-learning/blob/master/Character-level_Word-level_t-SNE.ipynb
+https://nbviewer.jupyter.org/github/SUDON-NOH/Python_data/blob/master/matplotlib_basic.ipynb
 
-출처: https://m.blog.naver.com/PostList.nhn?blogId=qbxlvnf11
