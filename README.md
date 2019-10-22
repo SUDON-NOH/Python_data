@@ -41,3 +41,19 @@
 
 ### index로 merge
 - data = pd.merge(data, data_1, how = 'inner', left_index = True, right_index = True)
+
+
+### 깃허브에서 주피터노트북 로드가 되지 않을 때
+nbviewer의 url에서 주피터 노트북 파일이 올려져 있는 깃허브 url을 합친다.
+
+https://nbviewer.jupyter.org
+
+깃허브 사이트의 url
+
+https://github.com/qbxlvnf11/machine-learning/blob/master/Character-level_Word-level_t-SNE.ipynb
+
+- 결과
+
+https://nbviewer.jupyter.org/github/qbxlvnf11/machine-learning/blob/master/Character-level_Word-level_t-SNE.ipynb
+
+출처: https://m.blog.naver.com/PostList.nhn?blogId=qbxlvnf11
