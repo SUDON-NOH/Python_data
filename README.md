@@ -31,7 +31,7 @@
 - iqr = q75 - q25
 - a = q75 + (1.5 * iqr)
 - b = q25 - (1.5 * iqr)
-
+https://goodtogreate.tistory.com/entry/%EC%9D%B4%EC%83%81%EC%B9%98-%EC%A0%9C%EA%B1%B0-Boxplot-%ED%95%B4%EC%84%9D%EC%9D%84-%ED%86%B5%ED%95%9C
 
 ### column name 변경
 - DataFrame.rename(columns={'original name1':'new name1', 'original name2':'new name2', 'original name3':'new name3'}, inplace=True)
