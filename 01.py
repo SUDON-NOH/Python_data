@@ -1,85 +1,58 @@
 import pandas as pd
+import numpy as np
+import xlrd
+import xlsxwriter
 
-data_86 = pd.read_table('201806.txt')
-data_87 = pd.read_table('201807.txt')
-data_88 = pd.read_table('201808.txt')
-data_89 = pd.read_table('201809.txt')
-data_810 = pd.read_table('201810.txt')
-data_811 = pd.read_table('201811.txt')
-data_812 = pd.read_table('201812.txt')
-data_91 = pd.read_table('201901.txt')
-data_92 = pd.read_table('201902.txt')
-data_93 = pd.read_table('201903.txt')
-data_94 = pd.read_table('201904.txt')
-data_95 = pd.read_table('201905.txt')
+workbook = xlrd.open_workbook('PD-1.xlsx')
 
+# Sheet names
+x = workbook.sheet_names()
 
-data_86 = data_86.replace(to_replace = '_', value = 0, regex = True)
-data_86 = data_86.astype({'pred_slng_amt':float})
-print(data_86['pred_slng_amt'].max())
+# 행마다
+for sheet in workbook.sheets():
+    print('시트이름', sheet.name)
+    for i in range(sheet.nrows):
+        row = sheet.row(i)
+        print('행','---',i,'---', row)
+        for j in row:
+            print(j, j.value)
 
-data_87 = data_87.replace(to_replace = '_', value = 0, regex = True)
-data_87 = data_87.astype({'pred_slng_amt':float})
-print(data_87['pred_slng_amt'].max())
+z = workbook.sheets()
+print(z)
 
-data_88 = data_88.replace(to_replace = '_', value = 0, regex = True)
-data_88 = data_88.astype({'pred_slng_amt':float})
-print(data_86['pred_slng_amt'].max())
+# 이름으로 시트 불러오기
+worksheet_RawData = workbook.sheet_by_name('Raw Data')
+print(worksheet_RawData)
 
-data_86 = data_86.replace(to_replace = '_', value = 0, regex = True)
-data_86 = data_86.astype({'pred_slng_amt':float})
-print(data_86['pred_slng_amt'].max())
+# 인덱스로 시트 불러오기
+worksheet_index = workbook.sheet_by_index(2)
+print(worksheet_index)
 
-data_86 = data_86.replace(to_replace = '_', value = 0, regex = True)
-data_86 = data_86.astype({'pred_slng_amt':float})
-print(data_86['pred_slng_amt'].max())
+# 시트이름 지정하여 저장하기
+a = [[1, 2, 3] , [4, 5, 6], [7, 8, 9]]
+b = [[11, 22, 33], [44, 55, 66], [77, 88, 99]]
+x = pd.DataFrame(a)
+y = pd.DataFrame(b)
+print(x)
 
-data_86 = data_86.replace(to_replace = '_', value = 0, regex = True)
-data_86 = data_86.astype({'pred_slng_amt':float})
-print(data_86['pred_slng_amt'].max())
+# pip install openpyxl
+x.to_excel('test_1.xlsx', sheet_name = 'test1')
 
-data_86 = data_86.replace(to_replace = '_', value = 0, regex = True)
-data_86 = data_86.astype({'pred_slng_amt':float})
-print(data_86['pred_slng_amt'].max())
+# 1. 엑셀 파일 열기 w/ExcelWriter
+# pip install XlsxWriter
+writer = pd.ExcelWriter('test_2.xlsx', engine = 'xlsxwriter')
 
-data_86 = data_86.replace(to_replace = '_', value = 0, regex = True)
-data_86 = data_86.astype({'pred_slng_amt':float})
-print(data_86['pred_slng_amt'].max())
+# 2. 시트별 데이터 추가하기
+x.to_excel(writer, sheet_name = '1')
+y.to_excel(writer, sheet_name = '2')
 
-data_86 = data_86.replace(to_replace = '_', value = 0, regex = True)
-data_86 = data_86.astype({'pred_slng_amt':float})
-print(data_86['pred_slng_amt'].max())
+writer.save()
 
+# 엑셀 시트 데이터 불러오기
 
+p = pd.read_excel('PD-1.xlsx', sheet_name='Raw Data', index = False)
+print(p)
+q = pd.read_excel('PD-1.xlsx', sheet_name=0)
 
-
-data = data_86.append(data_87)
-data = data.append(data_88)
-data = data.append(data_89)
-data = data.append(data_810)
-data = data.append(data_811)
-data = data.append(data_812)
-data = data.append(data_91)
-data = data.append(data_92)
-data = data.append(data_93)
-data = data.append(data_94)
-data = data.append(data_95)
-
-table = pd.read_excel('table.xlsx', index_col= None, skiprows= 6)
-table = table[['컬럼명(영문)', '컬럼명(한글)']]
-
-x = [i for i in table['컬럼명(영문)']]
-y = [i for i in table['컬럼명(한글)']]
-
-for i, r, step in zip(x, y, range(len(x))):
-    data = data.rename(columns = { i : r })
-    print(step)
-
-print(data.head())
-
-data.to_csv('data.csv', index = False)
-
-
-print(data.count())
-new = pd.read_csv('data.csv')
-print(new.count())
+p = p.drop(index=1, inplace = True)
+print(p)
