@@ -30,7 +30,7 @@
 - q75, q25 = np.percentile(Dataframe 열 or 행, [75, 25])
 - iqr = q75 - q25
 - a = q75 + (1.5 * iqr)
-- b = q25 - (1.5 * iqr)
+- b = q25 - (1.5 * iqr)  
 https://goodtogreate.tistory.com/entry/%EC%9D%B4%EC%83%81%EC%B9%98-%EC%A0%9C%EA%B1%B0-Boxplot-%ED%95%B4%EC%84%9D%EC%9D%84-%ED%86%B5%ED%95%9C
 
 ### column name 변경
