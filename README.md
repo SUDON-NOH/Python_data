@@ -11,7 +11,9 @@
 
 
 ### 검색 기능
-- df['columns].str.contains("str") columns 에 str을 포함한 행 찾기
+- Y = df['columns].str.contains("str") columns 에 str을 포함한 행 찾기
+- X = df[Y]           # y조건에 해당하는 행들만 추출
+
 - df.isin([str, num]) str, num을 포함한 행 찾기
 
 
