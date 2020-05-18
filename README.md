@@ -10,6 +10,11 @@
 - encoding = 'CP949' 로 불러온다
 
 
+### 검색 기능
+- df['columns].str.contains("str") columns 에 str을 포함한 행 찾기
+- df.isin([str, num]) str, num을 포함한 행 찾기
+
+
 ### 조건 검색
 
 - DataFrame[(DataFrame[Column's_name] == x) & (DataFrame[Column's_name_2] == y)]
