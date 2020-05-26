@@ -63,3 +63,8 @@ https://github.com/SUDON-NOH/Python_data/blob/master/matplotlib_basic.ipynb
 
 https://nbviewer.jupyter.org/github/SUDON-NOH/Python_data/blob/master/matplotlib_basic.ipynb
 
+### isin or is not in 사용법
+
+df_is = df['column'].isin('str or list')
+df_isnotin = ~df['column'].isin('str or list')
+
