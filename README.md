@@ -16,6 +16,12 @@
 
 - df.isin([str, num]) str, num을 포함한 행 찾기
 
+- 2 열을 검색
+
+                df_search = df['col_1'].str.contains(search_text)
+                df_search2 = df['col_2'].str.contains(search_text)
+                self.DF = df[df_search | df_search2]
+
 
 ### 조건 검색
 
