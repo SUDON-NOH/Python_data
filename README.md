@@ -74,3 +74,5 @@ https://nbviewer.jupyter.org/github/SUDON-NOH/Python_data/blob/master/matplotlib
 df_is = df['column'].isin('str or list')
 df_isnotin = ~df['column'].isin('str or list')
 
+##
+https://biopython.org/DIST/docs/api/Bio.Entrez-module.html
